@@ -11,3 +11,337 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root {
+  --azul-primario: #00a4e5;
+  --amarillo-primario: #fffe00;
+  --verde-primario: #00e000;
+}
+
+body {
+  font-family: "Inter", "Gill Sans";
+}
+
+.nav_texto {
+  font-size: 0.95em;
+  margin-left: 15px;
+}
+
+.inicio_titulo {
+  font-size: 7em;
+  font-weight: 800;
+}
+
+.inicio_parrafo {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.otros_titulos {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+.derecha {
+  text-align: right;
+  margin-right: 1em;
+  margin-bottom: -0.55em;
+}
+
+.izquierda {
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.nosotros_contenedor {
+  background-color: var(--azul-primario);
+  height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fotoManos {
+  width: 30%;
+  height: 50%;
+}
+
+.nosotros_parrafo {
+  font-size: 1.25em;
+  text-align: right;
+  color: white;
+}
+
+.abastecimiento_contenedor {
+  background-color: var(--amarillo-primario);
+  height: 30em;
+}
+
+.contacto_contenedor {
+  background-color: var(--verde-primario);
+  height: 30em;
+}
+
+.prueba{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.prueba span{
+  position: absolute;
+  display: block;
+}
+.prueba span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent,#2196f3);
+}
+.prueba:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+.prueba span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent,#2196f3);
+}
+.prueba:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.prueba span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#2196f3);
+}
+.prueba:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.prueba span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#2196f3);
+}
+.prueba:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/* SECCION LOGROS */
+.logros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6em;
+}
+
+.logrosNumeros {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.logrosDatos {
+  text-align: center;
+  margin-top: -1em;
+}
+/* SECCION APOYA AL FOOD TRUCK */
+.foodtruck_contenedor {
+  background-color: var(--amarillo-primario);
+  height: auto;
+}
+
+.titulo_anexo {
+  padding-right: 2.3em;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.foodtruck_texto {
+  text-align: right;
+  font-size: 1.15em;
+  width: 60%;
+  padding-right: 3em;
+}
+
+.elipseVerde {
+  position: relative;
+  bottom: 3.5em;
+  left: 8.2em;
+}
+
+.fotoFoodTruck {
+  position: relative;
+  right: 10em;
+  bottom: 1.8em;
+}
+
+.contenedorUnoFoodTruck {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedorDosFoodTruck {
+  padding: 2em 7em;
+}
+
+.empresaFoodTruck {
+  font-size: 3em;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.eventos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* SECCION COLABORAR */
+.contenedorUnoColaborar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.textoColaborar {
+  font-size: 1em;
+  width: 70%;
+  padding-left: 4em;
+}
+
+.elipseAzul {
+  position: relative;
+  bottom: 4em;
+  right: 8em;
+}
+
+.manosJuntas {
+  position: relative;
+  left: 7.3em;
+  bottom: 2.4em;
+}
+
+.contenedorDosColaborar {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.apoyoColaborar {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.botonRedondo {
+  border-radius: 100%;
+  margin: 2em 3em;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.25);
+  border: none;
+  background-color: #ffffff;
+}
+
+.contenedorAnimaciones {
+  height: 0;
+}
+
+.mensual {
+  padding: 4em 3.7em;
+}
+
+.mensualAzul {
+  position: relative;
+  right: 4.65em;
+  bottom: 13.8em;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.mensualAzul:hover {
+  transform: rotate(180deg);
+}
+
+.semestralAmarillo {
+  position: relative;
+  bottom: 13.8em;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.semestralAmarillo:hover{
+  transform: rotate(180deg);
+}
+
+.semestral {
+  padding: 4em 3.3em;
+}
+
+.anualVerde {
+  position: relative;
+  bottom: 13.8em;
+  left: 4.8em;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+.anualVerde:hover{
+  transform: rotate(180deg);
+}
+
+.anual {
+  padding: 4em;
+}
+
+.parrafoColaborar {
+  margin-top: 3em;
+}
+
+.aliasColaborar {
+  background-color: var(--azul-primario);
+  color: #ffffff;
+  padding: 0.8em 2.5em;
+  margin-top: -0.5em;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+}
+  /* SECCION SPONSORS */
+  .sponsor_contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fotos{
+    margin: 0 auto;
+  }
+
+  /* SECCION CONTACTO */
+.contacto_contenedor {
+  background-color: var(--verde-primario);
+  min-height: 30em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}

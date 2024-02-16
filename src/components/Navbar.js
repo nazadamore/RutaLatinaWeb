@@ -1,27 +1,57 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 
 export default function Nav1() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-            <Container>
-                <div className="d-flex justif   y-content-between align-items-center w-100">
-                    <Navbar.Brand href="#">Ruta Latina</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <nav
+            id="nav-bar"
+            className="navbar navbar-expand-lg bg-body-tertiary sticky-top"
+            data-bs-theme="light"
+        >
+            <div className="container">
+                <a className="navbar-brand nav_texto" href="#inicio">
+                    RUTA LATINA
+                </a>
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    className="collapse navbar-collapse justify-content-end"
+                    id="navbarNavAltMarkup"
+                >
+                    <div className="navbar-nav">
+                        <a
+                            className="nav-link active nav_texto"
+                            aria-current="page"
+                            href="#inicio"
+                        >
+                            INICIO
+                        </a>
+                        <a className="nav-link nav_texto" href="#nosotros">
+                            NOSOTROS
+                        </a>
+                        <a className="nav-link nav_texto" href="#galeria">
+                            GALERIA
+                        </a>
+                        <a className="nav-link nav_texto" href="#foodtruck">
+                            APOYA AL FOOD TRUCK
+                        </a>
+                        <a className="nav-link nav_texto" href="#colaborar">
+                            ¿COMO COLABORAR?
+                        </a>
+                        <a className="nav-link nav_texto" href="#contacto">
+                            CONTACTO
+                        </a>
+                    </div>
                 </div>
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto">
-                        <Nav.Link to="" className="nav-link active" aria-current="page">INICIO</Nav.Link>
-                        <Nav.Link href="" className="nav-link">NOSOTROS</Nav.Link>
-                        <Nav.Link href="" className="nav-link">GALERIA</Nav.Link>
-                        <Nav.Link href="" className="nav-link">ABASTECIMIENTO</Nav.Link>
-                        <Nav.Link href="" className="nav-link link-success" style={{ whiteSpace: 'nowrap' }}>¿CÓMO COLABORAR?</Nav.Link>
-                        <Nav.Link href="" className="nav-link">CONTACTO</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+            </div>
+        </nav>
     )
 }
